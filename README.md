@@ -5,7 +5,7 @@
 ## 개요
 
 화재 이미지를 탐지하기 위해 두 가지 접근 방식을 사용했습니다.
-* **Transfer Learning**: ImageNet으로 사전 학습된 **ResNet50** 모델을 미세 조정(Fine-tuning)하여 학습합니다.
+* **Transfer Learning**: ImageNet으로 사전 학습된 **ResNet18** 모델을 미세 조정(Fine-tuning)하여 학습합니다.
 * **Training from Scratch**: 독자적인 **CNN 아키텍처**를 정의하고 처음부터 학습합니다.
 
 

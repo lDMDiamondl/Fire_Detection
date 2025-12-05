@@ -26,9 +26,9 @@ Kaggle의 `phylake1337/fire-dataset`을 사용합니다. 코드는 실행 시 Ka
 
 사전 학습된 ResNet50 모델을 기반으로 화재 탐지 모델을 학습합니다.
 
-* **모델:** `models.resnet50(weights='IMAGENET1K_V1')`
+* **모델:** `models.resnet18(weights='models.ResNet18_Weights.IMAGENET1K_V1')`
 * **특징:**
-    * ResNet50의 마지막 Fully Connected Layer를 2개의 클래스(Fire, Non-Fire)에 맞게 수정합니다.
+    * ResNet18의 마지막 Fully Connected Layer를 2개의 클래스(Fire, Non-Fire)에 맞게 수정합니다.
     * 사전 학습된 가중치를 사용하여 적은 데이터와 에포크로도 높은 성능을 기대할 수 있습니다.
 
 ### 2. `train_scratch.ipynb` (Custom CNN)

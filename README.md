@@ -24,7 +24,7 @@ Kaggle의 `phylake1337/fire-dataset`을 사용합니다. 코드는 실행 시 Ka
 
 ### 1. `train.ipynb` (Transfer Learning)
 
-사전 학습된 ResNet50 모델을 기반으로 화재 탐지 모델을 학습합니다.
+사전 학습된 ResNet18 모델을 기반으로 화재 탐지 모델을 학습합니다.
 
 * **모델:** `models.resnet18(weights='models.ResNet18_Weights.IMAGENET1K_V1')`
 * **특징:**
@@ -44,10 +44,7 @@ Kaggle의 `phylake1337/fire-dataset`을 사용합니다. 코드는 실행 시 Ka
 
 두 코드 공통적으로 적용된 주요 학습 파라미터는 다음과 같습니다.
 
-* **이미지 전처리:**
-    * Resize: 224x224
-    * Augmentation: RandomHorizontalFlip, RandomRotation
-    * Normalization: Mean=[0.485, 0.456, 0.406], Std=[0.229, 0.224, 0.225]
+* **이미지 전처리:** Resize: 224x224
 * **Optimizer:** Adam (Learning Rate: 0.001)
 * **Loss Function:** CrossEntropyLoss
 * **Scheduler:** StepLR (10 에포크마다 학습률 0.1배 감소)

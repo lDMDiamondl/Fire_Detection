@@ -54,7 +54,6 @@ Kaggle의 `phylake1337/fire-dataset`을 사용합니다. 코드는 실행 시 Ka
 
 학습이 완료된 후 다음과 같은 시각화 결과를 제공합니다.
 
-* **Loss & Accuracy Graph:** 학습(Train) 및 검증(Validation) 과정에서의 손실과 정확도 변화 추이.
 * **Prediction Visualization:** 테스트 데이터셋에 대한 실제 라벨(T)과 예측 라벨(P)을 이미지와 함께 출력.
     * T: F: 실제 화재 (True: Fire)
     * P: NF: 예측 비화재 (Predicted: Non-Fire)

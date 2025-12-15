@@ -5,7 +5,7 @@
 ## 개요
 
 화재 이미지를 탐지하기 위해 두 가지 접근 방식을 사용했습니다.
-* **Transfer Learning**: ImageNet으로 사전 학습된 **ResNet18** 모델을 미세 조정(Fine-tuning)하여 학습합니다.
+* **Transfer Learning**: ImageNet으로 사전 학습된 **ResNet18** 모델을 파인튜닝하여 학습합니다.
 * **Training from Scratch**: 독자적인 **CNN 아키텍처**를 정의하고 처음부터 학습합니다.
 
 
@@ -44,7 +44,7 @@ Kaggle의 `phylake1337/fire-dataset`을 사용합니다. 코드는 실행 시 Ka
 
 두 코드 공통적으로 적용된 주요 학습 파라미터는 다음과 같습니다.
 
-* **이미지 전처리:** Resize: 224x224
+* **이미지 전처리:** Resize: 224 x 224
 * **Optimizer:** Adam (Learning Rate: 0.001)
 * **Loss Function:** CrossEntropyLoss
 * **Scheduler:** StepLR (10 에포크마다 학습률 0.1배 감소)
